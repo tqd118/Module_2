@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Stage 2</title>
+</head>
+<body>
+    <div class="scrollable">
+        <table class="table">
+            <caption>Exampe table for stage 2</caption>
+
+            <thead>
+                <tr class="table__row">
+                    <th class="table__cell table__cell_header">header 1</th>
+                    <th class="table__cell table__cell_header">header 2</th>
+                    <th class="table__cell table__cell_header">header 3</th>
+                    <th class="table__cell table__cell_header">header 4</th>
+                    <th class="table__cell table__cell_header">header 5</th>
+                    <th class="table__cell table__cell_header">header 6</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th class="table__cell table__cell_vheader" scope="row">vh</th>
+                    <td class="table__cell" colspan="2">merged data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                </tr>
+                <tr>
+                    <th class="table__cell table__cell_vheader" scope="row">vh</th>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                </tr>
+                <tr>
+                    <th class="table__cell table__cell_vheader" scope="row">vh</th>
+                    <td class="table__cell">long data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell" colspan="2">merged data</td>
+                </tr>
+                <tr>
+                    <th class="table__cell table__cell_vheader" scope="row">vh</th>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">very long data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                </tr>
+                <tr>
+                    <th class="table__cell table__cell_vheader" scope="row">vh</th>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                    <td class="table__cell">data</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td class="table__cell table__cell_footer">data</td>
+                    <td class="table__cell table__cell_footer">data</td>
+                    <td class="table__cell table__cell_footer">data</td>
+                    <td class="table__cell table__cell_footer">data</td>
+                    <td class="table__cell table__cell_footer">data</td>
+                    <td class="table__cell table__cell_footer">data</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <form class="form" action="">
+        <fieldset class="form__fieldset">
+            <legend>Example form for stage 2</legend>
+
+            <div class="form__wrapper">
+                <label for="text-input1">first text input</label>
+                <input class="form__focusable" type="text" name="first text" id="text-input1" placeholder="enter text" minlength="2" required>
+            </div>
+
+            <div class="form__wrapper">
+                <label for="text-input2">second text input</label>
+                <input class="form__focusable" type="text" name="second text" id="text-input2" placeholder="enter text" minlength="2" required>
+            </div>
+
+            <div class="form__wrapper">
+                <label for="email">email</label>
+                <input class="form__focusable" type="email" name="email" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form__wrapper">
+                <label for="tel">phone</label>
+                <input class="form__focusable" type="tel" name="phone" id="tel" pattern="\+375 [0-9]{2} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+375 44 000 00 00" required>
+            </div>
+
+            <label for="select">choose one option</label>
+            <select class="form__focusable" name="select" id="select" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <div class="form__wrapper">
+                <label for="number">number</label>
+                <input class="form__focusable" type="number" name="number" id="number" placeholder="enter number" value="42" required>
+            </div>
+
+            <div class="form__wrapper form__wrapper_narrow">
+                <input type="radio" value="option 1" name="option" id="radio1">
+                <label for="radio1">option 1</label>
+            </div>
+            <div class="form__wrapper form__wrapper_narrow">
+                <input type="radio" value="option 2" name="option" id="radio2">
+                <label for="radio2">option 2</label>
+            </div>
+            <div class="form__wrapper form__wrapper_narrow">
+                <input type="radio" value="option 3" name="option" id="radio3">
+                <label for="radio3">option 3</label>
+            </div>
+
+            <label for="textarea">textarea</label>
+            <textarea class="form__focusable" id="textarea" placeholder="large text" required></textarea>
+
+            <div class="form__wrapper">
+                <label for="password">password</label>
+                <input class="form__focusable" type="password" name="password" id="password" placeholder="1234" required>
+            </div>
+
+            <div class="form__wrapper form__wrapper_narrow">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">checkbox description</label>
+            </div>
+
+            <input type="text" id="disabled-input" disabled>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
