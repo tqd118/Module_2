@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #5f4c4c;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 40px;
+    padding: 5px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logo {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    height: 30px;
+}
+
+.logo__img {
+    height: 30px;
+    width: 30px;
+}
+
+#account {
+    height: 30px;
+    width: 30px;
+}
+
+#account > img {
+    height: 30px;
+    border-radius: 15px;
+}
+
+.actions-container, .actions-container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 40%;
+}
+
+.actions-container nav {
+    flex: 0.9;
+}
+
+.hamburger-container {
+    z-index: 2;
+}
+
+#hamburger {
+    display: none;
+
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-line {
+    display: block;
+
+    background-color: white;
+
+    height: 2px;
+    width: 24px;
+
+    position: relative;
+}
+
+.hamburger-line::before,
+.hamburger-line::after{
+    content: '';
+    display: block;
+
+    background-color: white;
+    
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    transition: all .2s ease-out;
+}
+
+.hamburger-line::before{
+    top: 7px;
+}
+
+.hamburger-line::after{
+    top: -7px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .actions-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 430px) {
+    .logo__label {
+        display: none;
+    }
+
+    .actions-container {
+        justify-content: end;
+        gap: 7px;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    #menu-toggle:checked ~ .hamburger-container .hamburger-line {
+        background: transparent;
+    }
+
+    #menu-toggle:checked ~ .hamburger-container .hamburger-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    #menu-toggle:checked ~ .hamburger-container .hamburger-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    #menu-toggle:not(:checked) ~ nav {
+        display: none;
+    }
+    
+    #menu {
+        display: none;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #181818;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
