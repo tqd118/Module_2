@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #FFCE99;
+}
+
+.container {
+    width: 80%;
+    margin: 15px auto;
+
+    padding: 15px;
+    background-color: #FFFDF1;
+    border-radius: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.header__logo {
+    height: 40px;
+    width: 40px;
+}
+
+.header__name {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.header__logo > img {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 100%;
+    border: 2px #FF9644 solid;
+}
+
+.personal-information {
+    font-size: 20px;
+}
+
+.personal-information__text {
+    word-spacing: 4px;
+}
+
+.personal-information__text > span {
+    color: #FF9644;
+    font-weight: bold;
+}
+
+.work-experience__list, .work-experience__duties {
+    list-style: none;
+}
+
+.work-experience__item-heading, .work-experience__duty {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin: 6px;
+}
+
+.work-experience__item-heading::before {
+    content: "";
+    background-color: #FF9644;
+    display: inline-block;
+    height: 2px;
+    width: 8px;
+}
+
+.work-experience__duty::before {
+    content: "";
+    background-color: #FF9644;
+    display: inline-block;
+    height: 2px;
+    width: 4px;
+}
+
+.skills__list {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+.skills__item {
+    height: 50px;
+    min-width: 220px;
+    border-radius: 10px;
+
+    font-weight: bold;
+    text-transform: lowercase;
+    text-align: center;
+    line-height: 50px;
+
+    background-color: #FF9644;
+
+    color: #FFFDF1;
+}
+
+.contacts__socials, .contacts__list {
+    display: block;
+
+    list-style: none;
+
+    height: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__social {
+    float: left;
+}
+
+.contacts__social > a{
+    display: flex;
+    height: 45px;
+    width: 200px;
+    border-radius: 10px;
+
+    align-items: center;
+    gap: 14px;
+    padding: 7px;
+
+    background-color: #562F00;
+    margin-right: 14px;
+}
+
+.contacts__social > a:visited {
+    text-decoration: none;
+}
+
+.contacts__social-logo {
+    height: 24px;
+    width: 24px;
+}
+
+.contacts__social-logo path {
+    fill: #FFFDF1;
+}
+
+.contacts__social:hover .contacts__social-logo path {
+    fill: #dbd9d3;
+}
+
+.contacts__social:hover .contacts__social-name {
+    color: #dbd9d3;
+}
+
+.contacts__social:hover {
+    text-decoration: underline #dbd9d3 2px;
+}
+
+.contacts__social-name {
+    color: #FFFDF1;
+}
+
+.contacts__list {
+    margin-top: 15px;
+    height: 20px;
+}
+
+.contacts__item {
+    float: left;
+    height: 20px;
+
+    margin-right: 14px;
+}
+
+.contacts__item > a {
+    color: grey;
+    text-decoration: none;
+}
