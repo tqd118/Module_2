@@ -1,3 +1,8 @@
+:root {
+    --primaryColor: #FFFDF1;
+    --accentColor: #FF9644;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -7,12 +12,12 @@ body {
     background-color: #FFCE99;
 }
 
-.container {
+.page {
     width: 80%;
     margin: 15px auto;
 
     padding: 15px;
-    background-color: #FFFDF1;
+    background-color: var(--primaryColor);
     border-radius: 15px;
 }
 
@@ -37,7 +42,7 @@ body {
     width: 40px;
 
     border-radius: 100%;
-    border: 2px #FF9644 solid;
+    border: 2px var(--accentColor) solid;
 }
 
 .personal-information {
@@ -49,7 +54,7 @@ body {
 }
 
 .personal-information__text > span {
-    color: #FF9644;
+    color: var(--accentColor);
     font-weight: bold;
 }
 
@@ -67,7 +72,7 @@ body {
 
 .work-experience__item-heading::before {
     content: "";
-    background-color: #FF9644;
+    background-color: var(--accentColor);
     display: inline-block;
     height: 2px;
     width: 8px;
@@ -75,7 +80,7 @@ body {
 
 .work-experience__duty::before {
     content: "";
-    background-color: #FF9644;
+    background-color: var(--accentColor);
     display: inline-block;
     height: 2px;
     width: 4px;
@@ -97,9 +102,9 @@ body {
     text-align: center;
     line-height: 50px;
 
-    background-color: #FF9644;
+    background-color: var(--accentColor);
 
-    color: #FFFDF1;
+    color: var(--primaryColor);
 }
 
 .contacts__socials, .contacts__list {
@@ -140,7 +145,7 @@ body {
 }
 
 .contacts__social-logo path {
-    fill: #FFFDF1;
+    fill: var(--primaryColor);
 }
 
 .contacts__social:hover .contacts__social-logo path {
@@ -156,7 +161,7 @@ body {
 }
 
 .contacts__social-name {
-    color: #FFFDF1;
+    color: var(--primaryColor);
 }
 
 .contacts__list {
